@@ -12,7 +12,7 @@ def storage_information_view(request):
 
     for visit in visits:
         duration = visit.get_duration()
-        formatted_delta = Visit.format_duration(duration)
+        formatted_delta = visit.format_duration(duration)
         is_strange = visit.is_visit_long()
         non_closed_visit = {
                 'who_entered': visit.passcard.owner_name,
