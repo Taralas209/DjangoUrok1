@@ -2,7 +2,9 @@
 
 ## Description
 
-Bank security control panel is a Django-based project that manages passcards and visits. It provides functionalities to track active passcards, visits, and storage information. The project uses Django's ORM for database operations and Django's views for handling requests.
+This is an internal repository for employees of Shining Bank. If you got into this repository by accident, you will not be able to run it, because you do not have access to the database, but you can freely use the code of the layout or see how queries to the database are implemented.
+
+Security desk - a site that can be connected to a remote database with visits and badge cards of employees of our bank
 
 ## Installation
 
@@ -19,7 +21,7 @@ pip install -r requirements.txt
 To run this project, navigate to the project directory and run the following command:
 
 ```bash
-python main.py
+python manage.py runserver 0.0.0.0:8000
 ```
 
 This will start the Django development server at 0.0.0.0:8000. 
